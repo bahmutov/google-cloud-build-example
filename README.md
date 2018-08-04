@@ -11,6 +11,10 @@
 
 ![Cloud Build GitHub setup](images/google-cloud-build-github.png)
 
+As soon as I pushed a commit to GitHub I can see the build
+
+![Cloud build in progress](images/building.png)
+
 ## Related information
 
 - [Google Cloud Build](https://cloud.google.com/cloud-build/)
