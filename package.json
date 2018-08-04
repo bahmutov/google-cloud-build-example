@@ -1,0 +1,30 @@
+{
+  "name": "google-cloud-build-example",
+  "version": "1.0.0",
+  "description": "Example running Cypress end-to-end tests on Google Cloud Build",
+  "main": "index.js",
+  "scripts": {
+    "test": "start-test 5000 cy:run",
+    "start": "serve public",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "dev": "start-test 5000 cy:open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/tiny-blog.git"
+  },
+  "keywords": [],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahmutov/tiny-blog/issues"
+  },
+  "homepage": "https://github.com/bahmutov/tiny-blog#readme",
+  "devDependencies": {
+    "cypress": "3.0.3",
+    "serve": "9.3.0",
+    "start-server-and-test": "1.5.0",
+    "@bahmutov/print-env": "1.1.0"
+  }
+}
