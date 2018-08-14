@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/bahmutov/tiny-blog#readme",
   "devDependencies": {
-    "cypress": "3.0.3",
+    "cypress": "3.1.0",
     "serve": "9.3.0",
     "start-server-and-test": "1.5.0",
     "@bahmutov/print-env": "1.1.0"
