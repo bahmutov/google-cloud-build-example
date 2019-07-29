@@ -1,0 +1,18 @@
+steps:
+  - id: npm-ci
+    name: node:10-alpine
+    env:
+      - "CI=1"
+    entrypoint: npm
+    args: ['ci']
+
+  - id: test
+    name: cypress/base:10
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        $(npm bin)/cypress verify && \
+        npm run test
+    waitFor:
+      - npm-ci
