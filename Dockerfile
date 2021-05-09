@@ -12,7 +12,7 @@
 # and if the copied files were the same, the image layer is cached and not recomputed
 # https://docs.docker.com/v17.09/engine/userguide/eng-image/dockerfile_best-practices/#build-cache
 # every other command like "RUN npm ci" is cached by default unless the command itself has been changed
-FROM cypress/base:10 as TEST
+FROM cypress/base:14 as TEST
 WORKDIR /app
 
 # dependencies will be installed only if the package files change
